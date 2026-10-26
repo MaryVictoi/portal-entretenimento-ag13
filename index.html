@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+    
+    <!-- Fonte Google: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 1. CSS RESET (Eric Meyer) -->
+    <link rel="stylesheet" href="reset.css">
+    
+    <!-- 2. CSS EXTERNO -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- 3. CSS INTERNO (Requisito da atividade) -->
+    <style>
+        header {
+            background-color: #2A0835; /* Roxo escuro profundo */
+            color: #F8F5F0;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid #F4C430; /* Detalhe em Dourado Retrô */
+        }
+
+        header .tag-topo {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: rgba(226, 212, 240, 0.15);
+            color: #F4C430;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(244, 196, 48, 0.3);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: #F8F5F0;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            color: #E2D4F0;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="tag-topo">Caderno Digital • Cultura & Mídias</span>
+        <h1>Meu Portal de Entretenimento Digital</h1>
+        <p>Estudos sobre Filmes, Música Brasileira, Games e Narrativas Transmídia</p>
+    </header>
+
+    <!-- Container Flexbox com as 3 Seções lado a lado -->
+    <main class="container-flex">
+
+        <!-- SEÇÃO 1: FILMES E SÉRIES (Dr. House) -->
+        <section id="secao-filmes" class="card-secao">
+            <h2 class="titulo-secao">1. Filmes & Séries</h2>
+            <p class="descricao-secao">
+                Análise da construção do anti-herói na TV dos anos 2000. Estudo de caso focado na série <em>House, M.D.</em>, examinando dilemas morais, cinismo e a desconstrução da infalibilidade médica.
+            </p>
+            
+            <div class="galeria-imagens">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjgxYjAwNmMtYTAwZC00YmQxLWJlOTMtMWM0NGJmNDE0YmI2XkEyXkFqcGc@._V1_QL75_UY281_CR1,0,190,281_.jpg" alt="Pôster Oficial Dr. House M.D." class="img-portal">
+                <p class="fonte-imagem">Fonte: IMDb / Fox Broadcasting</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: MÚSICA E PODCASTS (Chico Buarque) -->
+        <section id="secao-musica" class="card-secao card-destaque-roxo">
+            <h2 class="titulo-secao titulo-claro">2. Música & Podcasts</h2>
+            <p class="descricao-secao texto-claro">
+                Análise poética da obra de Chico Buarque durante a MPB nos anos 1970. Estudo das métricas em <em>Construção</em> e <em>Cálice</em>, combinado com a ascensão dos podcasts de áudio-drama.
+            </p>
+            
+            <div class="galeria-imagens">
+                <img src="https://s2-g1.glbimg.com/x2gtgiHgjBa_LOyaIzvSHdk33xY=/0x0:1167x894/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/Z/e/1vyGFCRqWbUrBY37GsLA/chicobuarque1966.jpg" alt="Chico Buarque em 1966 - Álbum de Estreia" class="img-portal img-polaroid">
+                <p class="fonte-imagem fonte-clara">Fonte: Acervo G1 / Som Livre (1966)</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: GAMES E TECNOLOGIA (The Last of Us) -->
+        <section id="secao-games" class="card-secao">
+            <h2 class="titulo-secao">3. Games & Tecnologia</h2>
+            <p class="descricao-secao">
+                A evolução da narrativa transmídia em <em>The Last of Us</em> (Naughty Dog / HBO). Como a ambientação sonora, o silêncio e o game design geram empatia emocional interativa.
+            </p>
+            
+            <div class="galeria-imagens">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png" alt="Capa Oficial The Last of Us Part I" class="img-portal">
+                <p class="fonte-imagem">Fonte: PlayStation Store Oficial</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <!-- CSS INLINE (Requisito da atividade) -->
+        <p style="text-align: center; padding: 25px 15px; background-color: #1A0323; color: #E2D4F0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.85rem; border-top: 1px solid rgba(226, 212, 240, 0.1);">
+            © 2026 Maria Vitória Moraes • Desenvolvimento de Sistemas I - Agenda 13 • Roxo Retrô Edition
+        </p>
+    </footer>
+
+</body>
+</html>

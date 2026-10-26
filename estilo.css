@@ -1,0 +1,139 @@
+/* ==========================================================================
+   ESTILO ROXO RETRÔ / VINTAGE VIOLET - AGENDA 13 (estilo.css)
+   ========================================================================== */
+
+/* Configurações Globais do Corpo da Página */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F8F5F0; /* Fundo Creme Vintage */
+    color: #1A0323;             /* Texto Roxo Quase Preto */
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   LAYOUT FLEXBOX PRINCIPAL (Organiza as 3 seções lado a lado)
+   ========================================================================== */
+.container-flex {
+    display: flex;                 /* Requisito: Modelo Flexbox */
+    flex-direction: row;           /* Posiciona as seções em linha */
+    justify-content: space-between;/* Espaçamento uniforme */
+    align-items: stretch;          /* Alinha a altura das colunas */
+    flex-wrap: wrap;               /* Garante responsividade em telas menores */
+    gap: 24px;                     /* Distância entre as colunas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Padronização dos Cartões (Adaptação Dinâmica às Imagens) */
+.card-secao {
+    flex: 1 1 310px;              /* Cresce, encolhe e mantém 310px de base */
+    display: flex;
+    flex-direction: column;       /* Organiza o conteúdo interno de cima para baixo */
+    justify-content: space-between;/* Garante que o conteúdo ocupe bem o espaço */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 26px 20px;
+    box-shadow: 0 4px 16px rgba(42, 8, 53, 0.08);
+    border: 1px solid rgba(42, 8, 53, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.card-secao:hover {
+    transform: translateY(-4px);  /* Efeito suave ao passar o mouse */
+}
+
+/* ==========================================================================
+   SELETORES DE ID (Bordas exclusivas para cada seção)
+   ========================================================================== */
+#secao-filmes {
+    border-top: 5px solid #2A0835; /* Borda Roxo Profundo */
+}
+
+#secao-musica {
+    border-top: 5px solid #F4C430; /* Borda Dourado Retrô */
+}
+
+#secao-games {
+    border-top: 5px solid #3B1242; /* Borda Roxo Card */
+}
+
+/* Cartão com Destaque em Roxo Escuro (Seção 2 - Chico Buarque) */
+.card-destaque-roxo {
+    background-color: #2A0835 !important;
+}
+
+/* ==========================================================================
+   CLASSES PARA TÍTULOS E TEXTOS
+   ========================================================================== */
+.titulo-secao {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2A0835;
+    margin-bottom: 12px;
+}
+
+.titulo-claro {
+    color: #F4C430 !important; /* Dourado para o cartão escuro */
+}
+
+.descricao-secao {
+    font-size: 0.92rem;
+    color: #4A3B4E;
+    margin-bottom: 20px;
+}
+
+.texto-claro {
+    color: #E2D4F0 !important; /* Lavanda para o cartão escuro */
+}
+
+/* ==========================================================================
+   CLASSES PARA IMAGENS INTEIRAS (SEM CORTES)
+   ========================================================================== */
+.galeria-imagens {
+    text-align: center;
+    width: 100%;
+}
+
+/* Imagens inteiras sem corte e ajustadas à proporção original */
+.img-portal {
+    width: 100%;
+    max-height: 280px;            /* Limite de altura para não desproporcionar */
+    height: auto;                 /* Permite que a imagem mantenha a proporção real */
+    object-fit: contain;          /* GARANTE QUE A IMAGEM NÃO SEJA CORTADA */
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: rgba(42, 8, 53, 0.04); /* Fundo sutil para preencher bordas */
+    border: 1px solid rgba(42, 8, 53, 0.15);
+    transition: transform 0.3s ease;
+}
+
+/* Moldura Polaroid adaptável para a seção escura */
+.img-polaroid {
+    background-color: #FFFFFF;
+    padding: 8px 8px 20px 8px;
+    border-radius: 4px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.img-portal:hover {
+    transform: scale(1.02);
+}
+
+/* Legendas / Fontes das imagens */
+.fonte-imagem {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.78rem;
+    color: #7A6880;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    text-align: right;
+}
+
+.fonte-clara {
+    color: #D1BFE6 !important;
+}
