@@ -1,3 +1,4 @@
+![Banner Portal Pixel de Entretenimento](Portal%20Pixel%20de%20Entretenimento.png)
 # 💜 Meu Portal de Entretenimento Digital — Agenda 13
 
 > Projeto acadêmico desenvolvido para a disciplina de **Desenvolvimento de Sistemas I** — ETEC / Centro Paula Souza.
